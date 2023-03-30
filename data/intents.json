@@ -1,0 +1,24 @@
+{"intents": [
+             {"tag": "greeting",
+              "patterns": ["Hello", "La forme?", "yo", "Salut", "ça roule?","Bonjour", "Salut à toi", "Salut" ],
+              "responses": ["Salut à toi!", "Hello", "Comment vas tu?", "Salutations!", "Enchanté"]
+             },
+             {"tag": "version",
+              "patterns": ["Quelle est la version de <ENV_NAME> ?", "En quelle version est <ENV_NAME>", "Peux tu me dire en quelle version est <ENV_NAME> ?", "Quelle est la version de la base <ENV_NAME> ?"],
+              "responses": ["<ENV_NAME> est en <ENV_NAME_VERSION>"]
+             },
+             {"tag": "date_rechargement",
+              "patterns": ["De quand date le dernier rechargement sur <ENV _NAME> ? ", "Quelle est la date du dernier rechargement de <ENV_NAME> ?"],
+              "responses": ["<ENV_NAME> a été recahrgé le <ENV_NAME_DATE>"]
+             },
+             {
+               "tag": "date_livraison",
+               "patterns": ["Quelle est la date de livraison de <ENV_NAME> ?"],
+               "responses": ["<ENV_NAME> a été livré le <ENV_NAME_DATE>"]
+             },
+             {
+                "tag": "date_compilation",
+                "patterns": ["Quelle est la date de compilation de <COMPILED_MODULE> ?"],
+                "responses": ["<COMPILED_MODULE> a été livré le <COMPILED_MODULE_DATE>"]
+             }
+]}
